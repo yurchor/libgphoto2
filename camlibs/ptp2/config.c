@@ -7104,7 +7104,7 @@ _put_Nikon_Movie(CONFIG_PUT_ARGS)
 			if (value.u32) {
 				if (value.u32 & (1<<14)) { gp_context_error (context, _("Movie recording cannot start: Camera is not in application mode.")); return GP_ERROR; }
 				if (value.u32 & (1<<13)) { gp_context_error (context, _("Movie recording cannot start: Set liveview selector is enabled.")); return GP_ERROR; }
-				if (value.u32 & (1<<12)) { gp_context_error (context, _("Movie recording cannot start: In enlarged liewview.")); return GP_ERROR; }
+				if (value.u32 & (1<<12)) { gp_context_error (context, _("Movie recording cannot start: In enlarged liveview.")); return GP_ERROR; }
 				if (value.u32 & (1<<11)) { gp_context_error (context, _("Movie recording cannot start: Card protected.")); return GP_ERROR; }
 				if (value.u32 & (1<<10)) { gp_context_error (context, _("Movie recording cannot start: Already in movie recording.")); return GP_ERROR; }
 				if (value.u32 & (1<< 9)) { gp_context_error (context, _("Movie recording cannot start: Images / movies not yet record in buffer.")); return GP_ERROR; }
